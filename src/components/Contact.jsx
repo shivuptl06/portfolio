@@ -1,8 +1,8 @@
-// import React from 'react';
+import 'animate.css';
 
 const Contact = () => {
   return (
-    <section className="py-16" id="contact">
+    <section className="py-16 animate__animated animate__fadeIn" id="contact">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
         <p className="mb-4">Feel free to reach out for collaborations or opportunities.</p>

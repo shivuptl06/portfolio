@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md fixed w-full z-10">
+    <nav className="bg-red-600 shadow-md fixed w-full z-10">
       <div className="container mx-auto flex justify-between items-center p-4">
         <h1 className="text-2xl font-bold text-blue-600">Shivam Patel</h1>
         <div className="hidden md:flex space-x-6">

@@ -1,4 +1,4 @@
-// import React from 'react';
+import 'animate.css';
 
 const skills = [
   { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
@@ -10,12 +10,12 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="py-16" id="skills">
+    <section className="py-16 animate__animated animate__fadeIn" id="skills">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">Skills</h2>
         <div className="flex flex-wrap justify-center gap-8">
           {skills.map((skill, index) => (
-            <div key={index} className="flex flex-col items-center">
+            <div key={index} className="flex flex-col items-center animate__animated animate__fadeInUp">
               <img src={skill.logo} alt={skill.name} className="h-16 w-16 mb-2" />
               <p className="text-lg font-medium">{skill.name}</p>
             </div>
