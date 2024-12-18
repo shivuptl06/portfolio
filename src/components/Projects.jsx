@@ -1,5 +1,9 @@
 import "animate.css";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
+import BlogAppImage from "../assets/BlogApp.png";
+import EcommerceAppImage from "../assets/EcommerceApp.png";
+import MusicPlayerAppImage from "../assets/MusicPlayerApp.png";
+import WeatherAppImage from "../assets/WeatherApp.png";
 
 const projects = [
   {
@@ -7,28 +11,28 @@ const projects = [
     description:
       "A full-stack blog app using the MERN stack with features like user authentication, profile management, CRUD operations for posts, and Cloudinary integration for media storage.",
     link: "https://blogapp-prodfrontend.vercel.app/login",
-    image: "../assets/BlogApp.png", // Replace with actual image
+    image: BlogAppImage,
   },
   {
     title: "E-commerce Product Catalog",
     description:
       "A responsive eCommerce platform using React and Tailwind CSS with dynamic cart, discount coupon functionality, and integration with the Fake Store API.",
     link: "https://ecommerce-webapp-pi-gray.vercel.app/",
-    image: "../assets/EcommerceApp.png", // Replace with actual image
+    image: EcommerceAppImage,
   },
   {
     title: "Online Music Player",
     description:
       "A minimal music player integrated with Deezer API, allowing users to search for songs, artists, and albums, and preview them.",
     link: "https://online-music-preview.netlify.app/",
-    image: "../assets/MusicPlayerApp.png", // Replace with actual image
+    image: MusicPlayerAppImage,
   },
   {
     title: "Weather Dashboard Application",
     description:
       "A weather dashboard built with React and Tailwind CSS, integrating OpenWeather and Unsplash APIs to provide real-time data and dynamic visuals.",
     link: "https://weather-finder-web.vercel.app/",
-    image: "../assets/WeatherApp.png", // Replace with actual image
+    image: WeatherAppImage,
   },
 ];
 
