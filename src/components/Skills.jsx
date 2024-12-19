@@ -1,5 +1,6 @@
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 import "animate.css";
+import aspLogo from "../assets/aspnet-svgrepo-com.svg";
 
 const skills = [
   {
@@ -39,6 +40,10 @@ const skills = [
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
   },
   {
+    name: "ASP.NET",
+    logo: aspLogo, // Corrected to use the imported logo directly
+  },
+  {
     name: "Flutter",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
   },
@@ -55,7 +60,10 @@ const skills = [
 const Skills = () => {
   return (
     <LazyLoadComponent>
-      <section className="py-16 mx-10 animate__animated animate__fadeIn" id="skills">
+      <section
+        className="py-16 mx-10 animate__animated animate__fadeIn"
+        id="skills"
+      >
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Skills</h2>
           <div className="flex flex-wrap justify-center gap-8">
@@ -68,6 +76,10 @@ const Skills = () => {
                   src={skill.logo}
                   alt={skill.name}
                   className="h-16 w-16 mb-2"
+                  onError={(e) => {
+                    // Fallback to default image if logo doesn't load
+                    e.target.src = "https://via.placeholder.com/64"; // Placeholder fallback image
+                  }}
                 />
                 <p className="text-lg font-medium">{skill.name}</p>
               </div>
