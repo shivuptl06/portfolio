@@ -1,5 +1,6 @@
 import { LazyLoadComponent } from 'react-lazy-load-image-component';
 import 'animate.css';
+import Resume from '../assets/Shivam Patel Web Dev Resunme.pdf';
 
 const Hero = () => {
   return (
@@ -14,7 +15,7 @@ const Hero = () => {
           </p>
           <div className="space-x-4">
             <a
-              href="/src/assets/Shivam Patel Web Dev Resunme.pdf"
+              href={Resume}
               className="bg-white text-blue-600 px-6 py-2 rounded-full hover:bg-gray-200 animate__animated animate__fadeInUp animate__delay-2s"
             >
               Download Resume
